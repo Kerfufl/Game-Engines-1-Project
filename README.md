@@ -1,12 +1,96 @@
-# Game-Engines-1-Project
-C19382426 Game Engines 1 2022-2023 repo for final assignment, AR scifi trainset
+# Project Title
 
-# Proposal
-Scifi trainset, probably aesthetically based on 'world of tomorrow' era trains. Should allow you to place tracks in a given space with the quest pass through/ phone AR and place train with a personalised number of carriages to follow said tracks, or set train down first to make their own path. Some sort of *Train To No Where*
+Name:
 
-# Implementation
-Train and carriages will be either found as existing models or generated through ai. In game, train can be spawned, with options of adding carriages as children which will match its movements. Scripts for following tracks or making their own path, possibly ways to react ot human intervention such as flying away when being picked up off the tracks.
+Student Number: 
 
-Tracks can be standard tracks that are placed or a special *holo* version when the train is making them itself. Probably has a script for checking direction to help the train to rotate with the track correctly. Tracks can be placed before train is set into motion, no need to complete tracks to have fun *off the rails* moments.
+Class Group:
 
-If I have time, I might include a diagetic controller for the train to control the speed and maybe elevation of the train to let it fly off the rails, so to speak.
+# Description of the project
+
+# Instructions for use
+
+# How it works
+
+# List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
+
+| Class/asset | Source |
+|-----------|-----------|
+| MyClass.cs | Self written |
+| MyClass1.cs | Modified from [reference]() |
+| MyClass2.cs | From [reference]() |
+
+# References
+
+# What I am most proud of in the assignment
+
+# Proposal submitted earlier can go here:
+
+## This is how to markdown text:
+
+This is *emphasis*
+
+This is a bulleted list
+
+- Item
+- Item
+
+This is a numbered list
+
+1. Item
+1. Item
+
+This is a [hyperlink](http://bryanduggan.org)
+
+# Headings
+## Headings
+#### Headings
+##### Headings
+
+This is code:
+
+```Java
+public void render()
+{
+	ui.noFill();
+	ui.stroke(255);
+	ui.rect(x, y, width, height);
+	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
+	ui.text(text, x + width * 0.5f, y + height * 0.5f);
+}
+```
+
+So is this without specifying the language:
+
+```
+public void render()
+{
+	ui.noFill();
+	ui.stroke(255);
+	ui.rect(x, y, width, height);
+	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
+	ui.text(text, x + width * 0.5f, y + height * 0.5f);
+}
+```
+
+This is an image using a relative URL:
+
+![An image](images/p8.png)
+
+This is an image using an absolute URL:
+
+![A different image](https://bryanduggandotorg.files.wordpress.com/2019/02/infinite-forms-00045.png?w=595&h=&zoom=2)
+
+This is a youtube video:
+
+[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
+
+This is a table:
+
+| Heading 1 | Heading 2 |
+|-----------|-----------|
+|Some stuff | Some more stuff in this column |
+|Some stuff | Some more stuff in this column |
+|Some stuff | Some more stuff in this column |
+|Some stuff | Some more stuff in this column |
+
