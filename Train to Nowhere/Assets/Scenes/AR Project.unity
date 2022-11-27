@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 62920727}
   - component: {fileID: 62920729}
   - component: {fileID: 62920730}
+  - component: {fileID: 62920731}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -264,12 +265,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62920720}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 254061bc6fa5a5f4f9bed0524c6918fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prefabToPlace: {fileID: 8742576219464499478, guid: 91f498d330a5e934eb8ed3d89dc79618, type: 3}
+  _prefabToPlace: {fileID: 6025785333880052270, guid: 760208ba950b16e499b297d003779329, type: 3}
+--- !u!114 &62920731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62920720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7718464d5ce7446a9f8693681d08e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawn_prefab: {fileID: 8742576219464499478, guid: 91f498d330a5e934eb8ed3d89dc79618, type: 3}
 --- !u!1 &228870336
 GameObject:
   m_ObjectHideFlags: 0

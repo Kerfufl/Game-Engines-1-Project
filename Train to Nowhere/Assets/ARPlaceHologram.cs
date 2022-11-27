@@ -75,7 +75,9 @@ public class ARPlaceHologram : MonoBehaviour
 
             // Therefore: create an anchor so that the object stays
             // in place in the real world.
-            CreateAnchor(Hits[0]);
+            var b = CreateAnchor(Hits[0]);
+
+            b.transform.position += Vector3.up*10;
 
             // Debug output what we actually hit
             //Log.text = $"Instantiated on: {Hits[0].hitType}";
@@ -117,10 +119,10 @@ public class ARPlaceHologram : MonoBehaviour
 
             // Note: the following method seems to produce an offset when placing
             // the prefab instance in AR Foundation 5.0 pre 8
-            //anchor = _anchorManager.AttachAnchor(hitPlane, hit.pose);
+            anchor = _anchorManager.AttachAnchor(hitPlane, hit.pose);
             // Make our prefab a child of the anchor, so that it's moved
             // with that anchor.
-            //Instantiate(_prefabToPlace, anchor.transform);
+            Instantiate(_prefabToPlace, anchor.transform);
 
             Debug.Log($"Created anchor attachment for plane (id: {anchor.nativePtr}).");
         }
@@ -128,8 +130,7 @@ public class ARPlaceHologram : MonoBehaviour
         {
             // Otherwise, just create a regular anchor at the hit pose
             // Note: the anchor can be anywhere in the scene hierarchy
-            var instantiatedObject = Instantiate(_prefabToPlace, hit.pose.position, hit.pose.rotation);
-
+            var instantiatedObject = Instantiate(_prefabToPlace, (hit.pose.position), hit.pose.rotation);
             // Make sure the new GameObject has an ARAnchor component.
             if (!instantiatedObject.TryGetComponent<ARAnchor>(out anchor))
             {
