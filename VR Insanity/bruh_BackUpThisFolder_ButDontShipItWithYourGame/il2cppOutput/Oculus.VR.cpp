@@ -2549,43 +2549,43 @@ struct Exception_t_marshaled_com
 struct FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8  : public Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE
 {
 	// System.Byte[] System.IO.FileStream::buf
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buf_8;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buf_7;
 	// System.String System.IO.FileStream::name
-	String_t* ___name_9;
+	String_t* ___name_8;
 	// Microsoft.Win32.SafeHandles.SafeFileHandle System.IO.FileStream::safeHandle
-	SafeFileHandle_t033FA6AAAC65F4BB25F4CBA9A242A58C95CD406E* ___safeHandle_10;
+	SafeFileHandle_t033FA6AAAC65F4BB25F4CBA9A242A58C95CD406E* ___safeHandle_9;
 	// System.Boolean System.IO.FileStream::isExposed
-	bool ___isExposed_11;
+	bool ___isExposed_10;
 	// System.Int64 System.IO.FileStream::append_startpos
-	int64_t ___append_startpos_12;
+	int64_t ___append_startpos_11;
 	// System.IO.FileAccess System.IO.FileStream::access
-	int32_t ___access_13;
+	int32_t ___access_12;
 	// System.Boolean System.IO.FileStream::owner
-	bool ___owner_14;
+	bool ___owner_13;
 	// System.Boolean System.IO.FileStream::async
-	bool ___async_15;
+	bool ___async_14;
 	// System.Boolean System.IO.FileStream::canseek
-	bool ___canseek_16;
+	bool ___canseek_15;
 	// System.Boolean System.IO.FileStream::anonymous
-	bool ___anonymous_17;
+	bool ___anonymous_16;
 	// System.Boolean System.IO.FileStream::buf_dirty
-	bool ___buf_dirty_18;
+	bool ___buf_dirty_17;
 	// System.Int32 System.IO.FileStream::buf_size
-	int32_t ___buf_size_19;
+	int32_t ___buf_size_18;
 	// System.Int32 System.IO.FileStream::buf_length
-	int32_t ___buf_length_20;
+	int32_t ___buf_length_19;
 	// System.Int32 System.IO.FileStream::buf_offset
-	int32_t ___buf_offset_21;
+	int32_t ___buf_offset_20;
 	// System.Int64 System.IO.FileStream::buf_start
-	int64_t ___buf_start_22;
+	int64_t ___buf_start_21;
 };
 
 struct FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8_StaticFields
 {
 	// System.Byte[] System.IO.FileStream::buf_recycle
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buf_recycle_6;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buf_recycle_5;
 	// System.Object System.IO.FileStream::buf_recycle_lock
-	RuntimeObject* ___buf_recycle_lock_7;
+	RuntimeObject* ___buf_recycle_lock_6;
 };
 
 // UnityEngine.Gradient
@@ -19434,7 +19434,7 @@ IL_002f:
 		int32_t L_11 = __this->___additionalOffset_5;
 		NullCheck(L_7);
 		int64_t L_12;
-		L_12 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(29 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_7, ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_9, ((int64_t)L_10))), ((int64_t)L_11))), 0);
+		L_12 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(20 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_7, ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_9, ((int64_t)L_10))), ((int64_t)L_11))), 0);
 		// chunk.chunkStream.Read(bufferData, 0, byteLength);
 		OVRBinaryChunk_tE9B4C14312DD8DDC3FCF193FB3354692886D8925 L_13 = ___chunk0;
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_14 = L_13.___chunkStream_0;
@@ -19442,7 +19442,7 @@ IL_002f:
 		int32_t L_16 = __this->___byteLength_1;
 		NullCheck(L_14);
 		int32_t L_17;
-		L_17 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_14, L_15, 0, L_16);
+		L_17 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(21 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_14, L_15, 0, L_16);
 		// int stride = byteStride > 0 ? byteStride : GetStrideForType(componentType);
 		int32_t L_18 = __this->___byteStride_2;
 		if ((((int32_t)L_18) > ((int32_t)0)))
@@ -19573,7 +19573,7 @@ IL_002f:
 		int32_t L_11 = __this->___additionalOffset_5;
 		NullCheck(L_7);
 		int64_t L_12;
-		L_12 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(29 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_7, ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_9, ((int64_t)L_10))), ((int64_t)L_11))), 0);
+		L_12 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(20 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_7, ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_9, ((int64_t)L_10))), ((int64_t)L_11))), 0);
 		// chunk.chunkStream.Read(bufferData, 0, byteLength);
 		OVRBinaryChunk_tE9B4C14312DD8DDC3FCF193FB3354692886D8925 L_13 = ___chunk0;
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_14 = L_13.___chunkStream_0;
@@ -19581,7 +19581,7 @@ IL_002f:
 		int32_t L_16 = __this->___byteLength_1;
 		NullCheck(L_14);
 		int32_t L_17;
-		L_17 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_14, L_15, 0, L_16);
+		L_17 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(21 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_14, L_15, 0, L_16);
 		// int stride = byteStride > 0 ? byteStride : GetStrideForType(componentType);
 		int32_t L_18 = __this->___byteStride_2;
 		if ((((int32_t)L_18) > ((int32_t)0)))
@@ -19712,7 +19712,7 @@ IL_002f:
 		int32_t L_11 = __this->___additionalOffset_5;
 		NullCheck(L_7);
 		int64_t L_12;
-		L_12 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(29 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_7, ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_9, ((int64_t)L_10))), ((int64_t)L_11))), 0);
+		L_12 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(20 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_7, ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_9, ((int64_t)L_10))), ((int64_t)L_11))), 0);
 		// chunk.chunkStream.Read(bufferData, 0, byteLength);
 		OVRBinaryChunk_tE9B4C14312DD8DDC3FCF193FB3354692886D8925 L_13 = ___chunk0;
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_14 = L_13.___chunkStream_0;
@@ -19720,7 +19720,7 @@ IL_002f:
 		int32_t L_16 = __this->___byteLength_1;
 		NullCheck(L_14);
 		int32_t L_17;
-		L_17 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_14, L_15, 0, L_16);
+		L_17 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(21 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_14, L_15, 0, L_16);
 		// int dataTypeSize = GetStrideForType(componentType);
 		int32_t L_18 = __this->___componentType_7;
 		int32_t L_19;
@@ -19879,7 +19879,7 @@ IL_002f:
 		int32_t L_11 = __this->___additionalOffset_5;
 		NullCheck(L_7);
 		int64_t L_12;
-		L_12 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(29 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_7, ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_9, ((int64_t)L_10))), ((int64_t)L_11))), 0);
+		L_12 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(20 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_7, ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_9, ((int64_t)L_10))), ((int64_t)L_11))), 0);
 		// chunk.chunkStream.Read(bufferData, 0, byteLength);
 		OVRBinaryChunk_tE9B4C14312DD8DDC3FCF193FB3354692886D8925 L_13 = ___chunk0;
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_14 = L_13.___chunkStream_0;
@@ -19887,7 +19887,7 @@ IL_002f:
 		int32_t L_16 = __this->___byteLength_1;
 		NullCheck(L_14);
 		int32_t L_17;
-		L_17 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_14, L_15, 0, L_16);
+		L_17 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(21 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_14, L_15, 0, L_16);
 		// int dataTypeSize = GetStrideForType(componentType);
 		int32_t L_18 = __this->___componentType_7;
 		int32_t L_19;
@@ -20113,7 +20113,7 @@ IL_002f:
 		int32_t L_11 = __this->___additionalOffset_5;
 		NullCheck(L_7);
 		int64_t L_12;
-		L_12 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(29 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_7, ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_9, ((int64_t)L_10))), ((int64_t)L_11))), 0);
+		L_12 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(20 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_7, ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_9, ((int64_t)L_10))), ((int64_t)L_11))), 0);
 		// chunk.chunkStream.Read(bufferData, 0, byteLength);
 		OVRBinaryChunk_tE9B4C14312DD8DDC3FCF193FB3354692886D8925 L_13 = ___chunk0;
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_14 = L_13.___chunkStream_0;
@@ -20121,7 +20121,7 @@ IL_002f:
 		int32_t L_16 = __this->___byteLength_1;
 		NullCheck(L_14);
 		int32_t L_17;
-		L_17 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_14, L_15, 0, L_16);
+		L_17 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(21 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_14, L_15, 0, L_16);
 		// int dataTypeSize = GetStrideForType(componentType);
 		int32_t L_18 = __this->___componentType_7;
 		int32_t L_19;
@@ -20392,7 +20392,7 @@ IL_0038:
 		int32_t L_12 = __this->___additionalOffset_5;
 		NullCheck(L_8);
 		int64_t L_13;
-		L_13 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(29 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_8, ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_10, ((int64_t)L_11))), ((int64_t)L_12))), 0);
+		L_13 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(20 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_8, ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_10, ((int64_t)L_11))), ((int64_t)L_12))), 0);
 		// chunk.chunkStream.Read(bufferData, 0, byteLength);
 		OVRBinaryChunk_tE9B4C14312DD8DDC3FCF193FB3354692886D8925 L_14 = ___chunk0;
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_15 = L_14.___chunkStream_0;
@@ -20400,7 +20400,7 @@ IL_0038:
 		int32_t L_17 = __this->___byteLength_1;
 		NullCheck(L_15);
 		int32_t L_18;
-		L_18 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_15, L_16, 0, L_17);
+		L_18 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(21 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_15, L_16, 0, L_17);
 		// int vecSize = dataType == OVRGLTFType.VEC3 ? 3 : 4;
 		int32_t L_19 = __this->___dataType_6;
 		if ((((int32_t)L_19) == ((int32_t)3)))
@@ -20722,7 +20722,7 @@ IL_002f:
 		int32_t L_11 = __this->___additionalOffset_5;
 		NullCheck(L_7);
 		int64_t L_12;
-		L_12 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(29 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_7, ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_9, ((int64_t)L_10))), ((int64_t)L_11))), 0);
+		L_12 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(20 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_7, ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_9, ((int64_t)L_10))), ((int64_t)L_11))), 0);
 		// chunk.chunkStream.Read(bufferData, 0, byteLength);
 		OVRBinaryChunk_tE9B4C14312DD8DDC3FCF193FB3354692886D8925 L_13 = ___chunk0;
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_14 = L_13.___chunkStream_0;
@@ -20730,7 +20730,7 @@ IL_002f:
 		int32_t L_16 = __this->___byteLength_1;
 		NullCheck(L_14);
 		int32_t L_17;
-		L_17 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_14, L_15, 0, L_16);
+		L_17 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(21 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_14, L_15, 0, L_16);
 		// int dataTypeSize = GetStrideForType(componentType);
 		int32_t L_18 = __this->___componentType_7;
 		int32_t L_19;
@@ -20892,7 +20892,7 @@ IL_001c:
 		int32_t L_10 = __this->___additionalOffset_5;
 		NullCheck(L_6);
 		int64_t L_11;
-		L_11 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(29 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_6, ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_8, ((int64_t)L_9))), ((int64_t)L_10))), 0);
+		L_11 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(20 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_6, ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_8, ((int64_t)L_9))), ((int64_t)L_10))), 0);
 		// chunk.chunkStream.Read(bufferData, 0, byteLength);
 		OVRBinaryChunk_tE9B4C14312DD8DDC3FCF193FB3354692886D8925 L_12 = ___chunk0;
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_13 = L_12.___chunkStream_0;
@@ -20900,7 +20900,7 @@ IL_001c:
 		int32_t L_15 = __this->___byteLength_1;
 		NullCheck(L_13);
 		int32_t L_16;
-		L_16 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_13, L_14, 0, L_15);
+		L_16 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(21 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_13, L_14, 0, L_15);
 		// return bufferData;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_17 = V_0;
 		return L_17;
@@ -20974,7 +20974,7 @@ IL_002f:
 		int32_t L_11 = __this->___additionalOffset_5;
 		NullCheck(L_7);
 		int64_t L_12;
-		L_12 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(29 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_7, ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_9, ((int64_t)L_10))), ((int64_t)L_11))), 0);
+		L_12 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(20 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_7, ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_9, ((int64_t)L_10))), ((int64_t)L_11))), 0);
 		// chunk.chunkStream.Read(bufferData, 0, byteLength);
 		OVRBinaryChunk_tE9B4C14312DD8DDC3FCF193FB3354692886D8925 L_13 = ___chunk0;
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_14 = L_13.___chunkStream_0;
@@ -20982,7 +20982,7 @@ IL_002f:
 		int32_t L_16 = __this->___byteLength_1;
 		NullCheck(L_14);
 		int32_t L_17;
-		L_17 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_14, L_15, 0, L_16);
+		L_17 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(21 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_14, L_15, 0, L_16);
 		// int dataTypeSize = GetStrideForType(componentType);
 		int32_t L_18 = __this->___componentType_7;
 		int32_t L_19;
@@ -23571,7 +23571,7 @@ IL_005c:
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_19 = __this->___m_glbStream_1;
 		NullCheck(L_19);
 		int64_t L_20;
-		L_20 = VirtualFuncInvoker0< int64_t >::Invoke(12 /* System.Int64 System.IO.Stream::get_Position() */, L_19);
+		L_20 = VirtualFuncInvoker0< int64_t >::Invoke(11 /* System.Int64 System.IO.Stream::get_Position() */, L_19);
 		L_18->___chunkStart_2 = L_20;
 		// m_binaryChunk.chunkStream = m_glbStream;
 		OVRBinaryChunk_tE9B4C14312DD8DDC3FCF193FB3354692886D8925* L_21 = (&__this->___m_binaryChunk_2);
@@ -23639,7 +23639,7 @@ IL_010a:
 		// m_glbStream.Close();
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_32 = __this->___m_glbStream_1;
 		NullCheck(L_32);
-		VirtualActionInvoker0::Invoke(18 /* System.Void System.IO.Stream::Close() */, L_32);
+		VirtualActionInvoker0::Invoke(13 /* System.Void System.IO.Stream::Close() */, L_32);
 		// return scene;
 		OVRGLTFScene_tEE5A89F307256AFA8EECD1F91A7BAE590B13E834 L_33 = V_0;
 		return L_33;
@@ -23650,7 +23650,7 @@ IL_0122:
 		// m_glbStream.Close();
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_34 = __this->___m_glbStream_1;
 		NullCheck(L_34);
-		VirtualActionInvoker0::Invoke(18 /* System.Void System.IO.Stream::Close() */, L_34);
+		VirtualActionInvoker0::Invoke(13 /* System.Void System.IO.Stream::Close() */, L_34);
 		// scene.nodes = m_Nodes;
 		List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* L_35 = __this->___m_Nodes_3;
 		(&V_0)->___nodes_1 = L_35;
@@ -24098,7 +24098,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRGLTFLoader_ValidateGLB_m995D23F3010DD
 		int32_t L_4 = V_0;
 		NullCheck(L_2);
 		int32_t L_5;
-		L_5 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_2, L_3, 0, L_4);
+		L_5 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(21 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_2, L_3, 0, L_4);
 		// uint magic = BitConverter.ToUInt32(buffer, 0);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(BitConverter_t6E99605185963BC12B3D369E13F2B88997E64A27_il2cpp_TypeInfo_var);
@@ -24126,7 +24126,7 @@ IL_002d:
 		int32_t L_10 = V_0;
 		NullCheck(L_8);
 		int32_t L_11;
-		L_11 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_8, L_9, 0, L_10);
+		L_11 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(21 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_8, L_9, 0, L_10);
 		// uint version = BitConverter.ToUInt32(buffer, 0);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_12 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(BitConverter_t6E99605185963BC12B3D369E13F2B88997E64A27_il2cpp_TypeInfo_var);
@@ -24154,7 +24154,7 @@ IL_004d:
 		int32_t L_16 = V_0;
 		NullCheck(L_14);
 		int32_t L_17;
-		L_17 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_14, L_15, 0, L_16);
+		L_17 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(21 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_14, L_15, 0, L_16);
 		// uint length = BitConverter.ToUInt32(buffer, 0);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_18 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(BitConverter_t6E99605185963BC12B3D369E13F2B88997E64A27_il2cpp_TypeInfo_var);
@@ -24164,7 +24164,7 @@ IL_004d:
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_20 = ___glbStream0;
 		NullCheck(L_20);
 		int64_t L_21;
-		L_21 = VirtualFuncInvoker0< int64_t >::Invoke(11 /* System.Int64 System.IO.Stream::get_Length() */, L_20);
+		L_21 = VirtualFuncInvoker0< int64_t >::Invoke(10 /* System.Int64 System.IO.Stream::get_Length() */, L_20);
 		if ((((int64_t)((int64_t)(uint64_t)L_19)) == ((int64_t)L_21)))
 		{
 			goto IL_0073;
@@ -24217,7 +24217,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 		uint32_t L_7 = V_0;
 		NullCheck(L_5);
 		int32_t L_8;
-		L_8 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_5, L_6, 0, L_7);
+		L_8 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(21 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_5, L_6, 0, L_7);
 		// return chunkBuffer;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_9 = V_1;
 		return L_9;
@@ -24256,7 +24256,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRGLTFLoader_ValidateChunk_mAC5A0C52305
 		int32_t L_4 = V_0;
 		NullCheck(L_2);
 		int32_t L_5;
-		L_5 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_2, L_3, 0, L_4);
+		L_5 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(21 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_2, L_3, 0, L_4);
 		// chunkLength = BitConverter.ToUInt32(buffer, 0);
 		uint32_t* L_6 = ___chunkLength2;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_7 = V_1;
@@ -24270,7 +24270,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRGLTFLoader_ValidateChunk_mAC5A0C52305
 		int32_t L_11 = V_0;
 		NullCheck(L_9);
 		int32_t L_12;
-		L_12 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_9, L_10, 0, L_11);
+		L_12 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(21 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_9, L_10, 0, L_11);
 		// uint chunkType = BitConverter.ToUInt32(buffer, 0);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_13 = V_1;
 		uint32_t L_14;
