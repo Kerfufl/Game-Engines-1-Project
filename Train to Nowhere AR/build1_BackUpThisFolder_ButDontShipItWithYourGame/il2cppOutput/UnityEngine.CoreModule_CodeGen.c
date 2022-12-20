@@ -1745,90 +1745,90 @@ extern void MinAttribute__ctor_mE569E9A31ED222B7128543394AAF44DA09839262 (void);
 extern void MultilineAttribute__ctor_m5BAEA5EB5EB078477AC5007100DE70EC06F95BBE (void);
 // 0x000003A0 System.Void UnityEngine.TextAreaAttribute::.ctor(System.Int32,System.Int32)
 extern void TextAreaAttribute__ctor_m5FEE25A73C001A99BC7A86895A0B88CF64FD6FA4 (void);
-// 0x000003A1 System.Single UnityEngine.Time::get_deltaTime()
+// 0x000003A1 System.Single UnityEngine.Time::get_time()
+extern void Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B (void);
+// 0x000003A2 System.Single UnityEngine.Time::get_deltaTime()
 extern void Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (void);
-// 0x000003A2 System.Single UnityEngine.Time::get_unscaledTime()
+// 0x000003A3 System.Single UnityEngine.Time::get_unscaledTime()
 extern void Time_get_unscaledTime_mAF4040B858903E1325D1C65B8BF1AC61460B2503 (void);
-// 0x000003A3 System.Single UnityEngine.Time::get_fixedUnscaledTime()
+// 0x000003A4 System.Single UnityEngine.Time::get_fixedUnscaledTime()
 extern void Time_get_fixedUnscaledTime_m408E1B883AE5D5D1469E6036F8A4B4822A6E9B37 (void);
-// 0x000003A4 System.Single UnityEngine.Time::get_unscaledDeltaTime()
+// 0x000003A5 System.Single UnityEngine.Time::get_unscaledDeltaTime()
 extern void Time_get_unscaledDeltaTime_mF057EECA857E5C0F90A3F910D26D3EE59F27C4B5 (void);
-// 0x000003A5 System.Int32 UnityEngine.Time::get_frameCount()
+// 0x000003A6 System.Int32 UnityEngine.Time::get_frameCount()
 extern void Time_get_frameCount_m4A42E558A71301A216BDC49EC402D62F19C79667 (void);
-// 0x000003A6 System.Single UnityEngine.Time::get_realtimeSinceStartup()
+// 0x000003A7 System.Single UnityEngine.Time::get_realtimeSinceStartup()
 extern void Time_get_realtimeSinceStartup_m73B3CB73175D79A44333D59BB70F9EDE55EC9510 (void);
-// 0x000003A7 System.Void UnityEngine.TouchScreenKeyboard::Internal_Destroy(System.IntPtr)
+// 0x000003A8 System.Void UnityEngine.TouchScreenKeyboard::Internal_Destroy(System.IntPtr)
 extern void TouchScreenKeyboard_Internal_Destroy_m83A7EDD06362B64AF552170085E3598D31625F70 (void);
-// 0x000003A8 System.Void UnityEngine.TouchScreenKeyboard::Destroy()
+// 0x000003A9 System.Void UnityEngine.TouchScreenKeyboard::Destroy()
 extern void TouchScreenKeyboard_Destroy_m8B3C649CE02C77170A0F41D8EEF6E7465F8B9CAD (void);
-// 0x000003A9 System.Void UnityEngine.TouchScreenKeyboard::Finalize()
+// 0x000003AA System.Void UnityEngine.TouchScreenKeyboard::Finalize()
 extern void TouchScreenKeyboard_Finalize_mCAFC1635D50B4AF9EEBFB0A5DC1D5027A2FEAA6B (void);
-// 0x000003AA System.Void UnityEngine.TouchScreenKeyboard::.ctor(System.String,UnityEngine.TouchScreenKeyboardType,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Int32)
+// 0x000003AB System.Void UnityEngine.TouchScreenKeyboard::.ctor(System.String,UnityEngine.TouchScreenKeyboardType,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Int32)
 extern void TouchScreenKeyboard__ctor_mA0C6FA07182A13B8F3F62731B94CAAD83F340861 (void);
-// 0x000003AB System.IntPtr UnityEngine.TouchScreenKeyboard::TouchScreenKeyboard_InternalConstructorHelper(UnityEngine.TouchScreenKeyboard_InternalConstructorHelperArguments&,System.String,System.String)
+// 0x000003AC System.IntPtr UnityEngine.TouchScreenKeyboard::TouchScreenKeyboard_InternalConstructorHelper(UnityEngine.TouchScreenKeyboard_InternalConstructorHelperArguments&,System.String,System.String)
 extern void TouchScreenKeyboard_TouchScreenKeyboard_InternalConstructorHelper_m14B4B7D80E368896C0CC49EA76D2B3208DC7D0F1 (void);
-// 0x000003AC System.Boolean UnityEngine.TouchScreenKeyboard::get_isSupported()
+// 0x000003AD System.Boolean UnityEngine.TouchScreenKeyboard::get_isSupported()
 extern void TouchScreenKeyboard_get_isSupported_mCFAC95CA6CAA06B4E21F42E3C40A39668D6B438E (void);
-// 0x000003AD System.Boolean UnityEngine.TouchScreenKeyboard::get_disableInPlaceEditing()
+// 0x000003AE System.Boolean UnityEngine.TouchScreenKeyboard::get_disableInPlaceEditing()
 extern void TouchScreenKeyboard_get_disableInPlaceEditing_m063C253E629D35E9C1DEC911EA785AA796D35252 (void);
-// 0x000003AE System.Boolean UnityEngine.TouchScreenKeyboard::get_isInPlaceEditingAllowed()
+// 0x000003AF System.Boolean UnityEngine.TouchScreenKeyboard::get_isInPlaceEditingAllowed()
 extern void TouchScreenKeyboard_get_isInPlaceEditingAllowed_mE57CDF32437DD1DCDC665072457C91DD31EB93D0 (void);
-// 0x000003AF System.Boolean UnityEngine.TouchScreenKeyboard::IsInPlaceEditingAllowed()
+// 0x000003B0 System.Boolean UnityEngine.TouchScreenKeyboard::IsInPlaceEditingAllowed()
 extern void TouchScreenKeyboard_IsInPlaceEditingAllowed_m457215121F1DEBEEE4D9665358C13F7E3D041AE7 (void);
-// 0x000003B0 UnityEngine.TouchScreenKeyboard UnityEngine.TouchScreenKeyboard::Open(System.String,UnityEngine.TouchScreenKeyboardType,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Int32)
+// 0x000003B1 UnityEngine.TouchScreenKeyboard UnityEngine.TouchScreenKeyboard::Open(System.String,UnityEngine.TouchScreenKeyboardType,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Int32)
 extern void TouchScreenKeyboard_Open_m2E1E3A71919EE30C51539DF8A037B74BE2D78065 (void);
-// 0x000003B1 UnityEngine.TouchScreenKeyboard UnityEngine.TouchScreenKeyboard::Open(System.String,UnityEngine.TouchScreenKeyboardType,System.Boolean,System.Boolean,System.Boolean)
+// 0x000003B2 UnityEngine.TouchScreenKeyboard UnityEngine.TouchScreenKeyboard::Open(System.String,UnityEngine.TouchScreenKeyboardType,System.Boolean,System.Boolean,System.Boolean)
 extern void TouchScreenKeyboard_Open_mE24AE590A477F9D027537FD170B1DC02627C4D7E (void);
-// 0x000003B2 System.String UnityEngine.TouchScreenKeyboard::get_text()
+// 0x000003B3 System.String UnityEngine.TouchScreenKeyboard::get_text()
 extern void TouchScreenKeyboard_get_text_m74593E81B017446204A9DB1F7359922A2C005B1E (void);
-// 0x000003B3 System.Void UnityEngine.TouchScreenKeyboard::set_text(System.String)
+// 0x000003B4 System.Void UnityEngine.TouchScreenKeyboard::set_text(System.String)
 extern void TouchScreenKeyboard_set_text_m0A8AA05F4D9D27E8764955F0041452145B6C6FBB (void);
-// 0x000003B4 System.Void UnityEngine.TouchScreenKeyboard::set_hideInput(System.Boolean)
+// 0x000003B5 System.Void UnityEngine.TouchScreenKeyboard::set_hideInput(System.Boolean)
 extern void TouchScreenKeyboard_set_hideInput_m8FDDB21FB7E9B06B791649BBE369E4EA0F5F5299 (void);
-// 0x000003B5 System.Boolean UnityEngine.TouchScreenKeyboard::get_active()
+// 0x000003B6 System.Boolean UnityEngine.TouchScreenKeyboard::get_active()
 extern void TouchScreenKeyboard_get_active_mB22402FB9E56D3F652DA785F01E504A530FF8775 (void);
-// 0x000003B6 System.Void UnityEngine.TouchScreenKeyboard::set_active(System.Boolean)
+// 0x000003B7 System.Void UnityEngine.TouchScreenKeyboard::set_active(System.Boolean)
 extern void TouchScreenKeyboard_set_active_m4382D57F87E4C86B59864E86BE93A8A2A474B7C2 (void);
-// 0x000003B7 UnityEngine.TouchScreenKeyboard/Status UnityEngine.TouchScreenKeyboard::get_status()
+// 0x000003B8 UnityEngine.TouchScreenKeyboard/Status UnityEngine.TouchScreenKeyboard::get_status()
 extern void TouchScreenKeyboard_get_status_mCC466FDEC7E1913D8585ABA7F048FC198CB19504 (void);
-// 0x000003B8 System.Void UnityEngine.TouchScreenKeyboard::set_characterLimit(System.Int32)
+// 0x000003B9 System.Void UnityEngine.TouchScreenKeyboard::set_characterLimit(System.Int32)
 extern void TouchScreenKeyboard_set_characterLimit_mCD8F3BC047EF2515272A689368CF3678A419B854 (void);
-// 0x000003B9 System.Boolean UnityEngine.TouchScreenKeyboard::get_canGetSelection()
+// 0x000003BA System.Boolean UnityEngine.TouchScreenKeyboard::get_canGetSelection()
 extern void TouchScreenKeyboard_get_canGetSelection_m340ACEFDB9609DEED4FE7D451A4DCCC1024F767A (void);
-// 0x000003BA System.Boolean UnityEngine.TouchScreenKeyboard::get_canSetSelection()
+// 0x000003BB System.Boolean UnityEngine.TouchScreenKeyboard::get_canSetSelection()
 extern void TouchScreenKeyboard_get_canSetSelection_m6CD6C069A9FEF91CC8014B877EB057ECF598EDF9 (void);
-// 0x000003BB UnityEngine.RangeInt UnityEngine.TouchScreenKeyboard::get_selection()
+// 0x000003BC UnityEngine.RangeInt UnityEngine.TouchScreenKeyboard::get_selection()
 extern void TouchScreenKeyboard_get_selection_m1D44C9A8D4EA91F61706F048ED318E537DC46AB2 (void);
-// 0x000003BC System.Void UnityEngine.TouchScreenKeyboard::set_selection(UnityEngine.RangeInt)
+// 0x000003BD System.Void UnityEngine.TouchScreenKeyboard::set_selection(UnityEngine.RangeInt)
 extern void TouchScreenKeyboard_set_selection_mC27C2948118086822A151118C379FAAF692DB2DF (void);
-// 0x000003BD System.Void UnityEngine.TouchScreenKeyboard::GetSelection(System.Int32&,System.Int32&)
+// 0x000003BE System.Void UnityEngine.TouchScreenKeyboard::GetSelection(System.Int32&,System.Int32&)
 extern void TouchScreenKeyboard_GetSelection_mFE603E50B5D189F96A3E3D93FA5F70E7B2DA9C5A (void);
-// 0x000003BE System.Void UnityEngine.TouchScreenKeyboard::SetSelection(System.Int32,System.Int32)
+// 0x000003BF System.Void UnityEngine.TouchScreenKeyboard::SetSelection(System.Int32,System.Int32)
 extern void TouchScreenKeyboard_SetSelection_m589290680988DFA5FBABA7336F58907C62D182DA (void);
-// 0x000003BF UnityEngine.BootConfigData UnityEngine.BootConfigData::WrapBootConfigData(System.IntPtr)
+// 0x000003C0 UnityEngine.BootConfigData UnityEngine.BootConfigData::WrapBootConfigData(System.IntPtr)
 extern void BootConfigData_WrapBootConfigData_m47132663C7FB94C3CA9627E5955C1848165AEF72 (void);
-// 0x000003C0 System.Void UnityEngine.BootConfigData::.ctor(System.IntPtr)
+// 0x000003C1 System.Void UnityEngine.BootConfigData::.ctor(System.IntPtr)
 extern void BootConfigData__ctor_m67B06923C40A5363192040A89BB92479B4B74A9A (void);
-// 0x000003C1 System.Boolean UnityEngine.Behaviour::get_enabled()
+// 0x000003C2 System.Boolean UnityEngine.Behaviour::get_enabled()
 extern void Behaviour_get_enabled_mAAC9F15E9EBF552217A5AE2681589CC0BFA300C1 (void);
-// 0x000003C2 System.Void UnityEngine.Behaviour::set_enabled(System.Boolean)
+// 0x000003C3 System.Void UnityEngine.Behaviour::set_enabled(System.Boolean)
 extern void Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A (void);
-// 0x000003C3 System.Boolean UnityEngine.Behaviour::get_isActiveAndEnabled()
+// 0x000003C4 System.Boolean UnityEngine.Behaviour::get_isActiveAndEnabled()
 extern void Behaviour_get_isActiveAndEnabled_mEB4ECCE9761A7016BC619557CEFEA1A30D3BF28A (void);
-// 0x000003C4 System.Void UnityEngine.Behaviour::.ctor()
+// 0x000003C5 System.Void UnityEngine.Behaviour::.ctor()
 extern void Behaviour__ctor_m00422B6EFEA829BCB116D715E74F1EAD2CB6F4F8 (void);
-// 0x000003C5 System.Void UnityEngine.ClassLibraryInitializer::Init()
+// 0x000003C6 System.Void UnityEngine.ClassLibraryInitializer::Init()
 extern void ClassLibraryInitializer_Init_m0B7E37DD365582370981A7697AB7273F7A20FF0A (void);
-// 0x000003C6 System.Void UnityEngine.ClassLibraryInitializer::InitStdErrWithHandle(System.IntPtr)
+// 0x000003C7 System.Void UnityEngine.ClassLibraryInitializer::InitStdErrWithHandle(System.IntPtr)
 extern void ClassLibraryInitializer_InitStdErrWithHandle_m88C6AA53D2E42443B5456B72FC78F09E13DC2504 (void);
-// 0x000003C7 System.Void UnityEngine.WaitForEndOfFrame::.ctor()
+// 0x000003C8 System.Void UnityEngine.WaitForEndOfFrame::.ctor()
 extern void WaitForEndOfFrame__ctor_m4AF7E576C01E6B04443BB898B1AE5D645F7D45AB (void);
-// 0x000003C8 System.Void UnityEngine.SelectionBaseAttribute::.ctor()
+// 0x000003C9 System.Void UnityEngine.SelectionBaseAttribute::.ctor()
 extern void SelectionBaseAttribute__ctor_m6B586E58B9F8CF4D6ADF3802179F67174301F063 (void);
-// 0x000003C9 System.Void UnityEngine.YieldInstruction::.ctor()
+// 0x000003CA System.Void UnityEngine.YieldInstruction::.ctor()
 extern void YieldInstruction__ctor_m23280B9DFE9C3E80554A656B4E7125BC9B2C027B (void);
-// 0x000003CA System.Void UnityEngine.WaitForSeconds::.ctor(System.Single)
-extern void WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC (void);
 // 0x000003CB System.Type UnityEngine.AttributeHelperEngine::GetParentTypeDisallowingMultipleInclusion(System.Type)
 extern void AttributeHelperEngine_GetParentTypeDisallowingMultipleInclusion_m699E7A570CBD00B81273CDFB539E1437D8A0E7DC (void);
 // 0x000003CC System.Type[] UnityEngine.AttributeHelperEngine::GetRequiredComponents(System.Type)
@@ -5086,6 +5086,7 @@ static Il2CppMethodPointer s_methodPointers[2196] =
 	MinAttribute__ctor_mE569E9A31ED222B7128543394AAF44DA09839262,
 	MultilineAttribute__ctor_m5BAEA5EB5EB078477AC5007100DE70EC06F95BBE,
 	TextAreaAttribute__ctor_m5FEE25A73C001A99BC7A86895A0B88CF64FD6FA4,
+	Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B,
 	Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865,
 	Time_get_unscaledTime_mAF4040B858903E1325D1C65B8BF1AC61460B2503,
 	Time_get_fixedUnscaledTime_m408E1B883AE5D5D1469E6036F8A4B4822A6E9B37,
@@ -5127,7 +5128,6 @@ static Il2CppMethodPointer s_methodPointers[2196] =
 	WaitForEndOfFrame__ctor_m4AF7E576C01E6B04443BB898B1AE5D645F7D45AB,
 	SelectionBaseAttribute__ctor_m6B586E58B9F8CF4D6ADF3802179F67174301F063,
 	YieldInstruction__ctor_m23280B9DFE9C3E80554A656B4E7125BC9B2C027B,
-	WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC,
 	AttributeHelperEngine_GetParentTypeDisallowingMultipleInclusion_m699E7A570CBD00B81273CDFB539E1437D8A0E7DC,
 	AttributeHelperEngine_GetRequiredComponents_m40EADB1A403020D292A62108D295B67111F10738,
 	AttributeHelperEngine_GetExecuteMode_m6863AD945E6A41B55DA50DB77C86773B088F86FF,
@@ -8004,6 +8004,7 @@ static const int32_t s_InvokerIndices[2196] =
 	8966,
 	8966,
 	8966,
+	8966,
 	8932,
 	8966,
 	8791,
@@ -8041,7 +8042,6 @@ static const int32_t s_InvokerIndices[2196] =
 	5746,
 	5746,
 	5746,
-	4635,
 	8607,
 	8607,
 	8490,

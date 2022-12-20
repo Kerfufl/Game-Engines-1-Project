@@ -11,7 +11,6 @@ public class PlaceAndMovePrefab : MonoBehaviour
     GameObject spawned_object;
     bool object_spawned;
     ARRaycastManager arrayman;
-    Coroutine cr;
     List <ARRaycastHit> hits=new List<ARRaycastHit>();
     // Start is called before the first frame update
     void Start()
@@ -31,9 +30,11 @@ public class PlaceAndMovePrefab : MonoBehaviour
                 var hitpose=hits[0].pose;
                 if(!object_spawned)
                 {
-                    cr = StartCoroutine(create(hitpose));
-                    StopCoroutine(cr);
-                    cr =null;
+                    spawned_object=Instantiate(spawn_prefab,hitpose.position+(Vector3.up*.1f),hitpose.rotation);
+                    object_spawned=true;
+                } else {
+                    spawned_object.transform.position = hitpose.position+(Vector3.up*.1f);
+                    spawned_object.transform.rotation = hitpose.rotation;
                 }
 
             }
@@ -45,16 +46,7 @@ public class PlaceAndMovePrefab : MonoBehaviour
 
     }
 
-    IEnumerator create(UnityEngine.Pose hitpose)
-    {
-        while(true)
-        {
-            spawned_object=Instantiate(spawn_prefab,hitpose.position+(Vector3.up*.1f),hitpose.rotation);
-            object_spawned=true;
-
-            yield return new WaitForSeconds(1f);
-        } 
-    }
+    
 
     
 }
