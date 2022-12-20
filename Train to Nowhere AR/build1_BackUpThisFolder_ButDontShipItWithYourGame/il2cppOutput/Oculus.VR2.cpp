@@ -8473,10 +8473,6 @@ inline void Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703 (Nullable
 }
 // OVRPlugin/Result OVRPlugin/OVRP_1_31_0::ovrp_GetTimeInSeconds(System.Double&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t OVRP_1_31_0_ovrp_GetTimeInSeconds_m5FA5C6BEC85E089A9C5E406936E13B1CDF6EDAC6 (double* ___value0, const RuntimeMethod* method) ;
-// System.Void OculusXRPlugin::SetColorScale(System.Single,System.Single,System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusXRPlugin_SetColorScale_m20DAD44814E22C9614ADE7C0C6F1C2F0A7DF601F (float ___x0, float ___y1, float ___z2, float ___w3, const RuntimeMethod* method) ;
-// System.Void OculusXRPlugin::SetColorOffset(System.Single,System.Single,System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusXRPlugin_SetColorOffset_m8219BBE3032A4978D7133616EFA86B64F2D8956A (float ___x0, float ___y1, float ___z2, float ___w3, const RuntimeMethod* method) ;
 // OVRPlugin/Result OVRPlugin/OVRP_1_32_0::ovrp_AddCustomMetadata(System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t OVRP_1_32_0_ovrp_AddCustomMetadata_m1606BD59E195FFE35061E37059CE5E23CAB183DD (String_t* ___name0, String_t* ___param1, const RuntimeMethod* method) ;
 // OVRPlugin/Result OVRPlugin/OVRP_1_38_0::ovrp_SetDeveloperMode(OVRPlugin/Bool)
@@ -30479,28 +30475,8 @@ IL_0026:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRPlugin_SetColorScaleAndOffset_m23BE07937AE6D262C0264959EDA7050DC48B22F7 (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___colorScale0, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___colorOffset1, bool ___applyToAllLayers2, const RuntimeMethod* method) 
 {
 	{
-		// OculusXRPlugin.SetColorScale(colorScale.x, colorScale.y, colorScale.z, colorScale.w);
-		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_0 = ___colorScale0;
-		float L_1 = L_0.___x_1;
-		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_2 = ___colorScale0;
-		float L_3 = L_2.___y_2;
-		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_4 = ___colorScale0;
-		float L_5 = L_4.___z_3;
-		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_6 = ___colorScale0;
-		float L_7 = L_6.___w_4;
-		OculusXRPlugin_SetColorScale_m20DAD44814E22C9614ADE7C0C6F1C2F0A7DF601F(L_1, L_3, L_5, L_7, NULL);
-		// OculusXRPlugin.SetColorOffset(colorOffset.x, colorOffset.y, colorOffset.z, colorOffset.w);
-		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_8 = ___colorOffset1;
-		float L_9 = L_8.___x_1;
-		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_10 = ___colorOffset1;
-		float L_11 = L_10.___y_2;
-		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_12 = ___colorOffset1;
-		float L_13 = L_12.___z_3;
-		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_14 = ___colorOffset1;
-		float L_15 = L_14.___w_4;
-		OculusXRPlugin_SetColorOffset_m8219BBE3032A4978D7133616EFA86B64F2D8956A(L_9, L_11, L_13, L_15, NULL);
-		// return true;
-		return (bool)1;
+		// return false;
+		return (bool)0;
 	}
 }
 // System.Boolean OVRPlugin::AddCustomMetadata(System.String,System.String)

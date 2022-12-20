@@ -1926,64 +1926,64 @@ struct Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F
 		struct
 		{
 			// System.Int32 System.Decimal::flags
-			int32_t ___flags_8;
+			int32_t ___flags_5;
 		};
 		#pragma pack(pop, tp)
 		struct
 		{
-			int32_t ___flags_8_forAlignmentOnly;
+			int32_t ___flags_5_forAlignmentOnly;
 		};
 		#pragma pack(push, tp, 1)
 		struct
 		{
-			char ___hi_9_OffsetPadding[4];
+			char ___hi_6_OffsetPadding[4];
 			// System.Int32 System.Decimal::hi
-			int32_t ___hi_9;
+			int32_t ___hi_6;
 		};
 		#pragma pack(pop, tp)
 		struct
 		{
-			char ___hi_9_OffsetPadding_forAlignmentOnly[4];
-			int32_t ___hi_9_forAlignmentOnly;
+			char ___hi_6_OffsetPadding_forAlignmentOnly[4];
+			int32_t ___hi_6_forAlignmentOnly;
 		};
 		#pragma pack(push, tp, 1)
 		struct
 		{
-			char ___lo_10_OffsetPadding[8];
+			char ___lo_7_OffsetPadding[8];
 			// System.Int32 System.Decimal::lo
-			int32_t ___lo_10;
+			int32_t ___lo_7;
 		};
 		#pragma pack(pop, tp)
 		struct
 		{
-			char ___lo_10_OffsetPadding_forAlignmentOnly[8];
-			int32_t ___lo_10_forAlignmentOnly;
+			char ___lo_7_OffsetPadding_forAlignmentOnly[8];
+			int32_t ___lo_7_forAlignmentOnly;
 		};
 		#pragma pack(push, tp, 1)
 		struct
 		{
-			char ___mid_11_OffsetPadding[12];
+			char ___mid_8_OffsetPadding[12];
 			// System.Int32 System.Decimal::mid
-			int32_t ___mid_11;
+			int32_t ___mid_8;
 		};
 		#pragma pack(pop, tp)
 		struct
 		{
-			char ___mid_11_OffsetPadding_forAlignmentOnly[12];
-			int32_t ___mid_11_forAlignmentOnly;
+			char ___mid_8_OffsetPadding_forAlignmentOnly[12];
+			int32_t ___mid_8_forAlignmentOnly;
 		};
 		#pragma pack(push, tp, 1)
 		struct
 		{
-			char ___ulomidLE_12_OffsetPadding[8];
+			char ___ulomidLE_9_OffsetPadding[8];
 			// System.UInt64 System.Decimal::ulomidLE
-			uint64_t ___ulomidLE_12;
+			uint64_t ___ulomidLE_9;
 		};
 		#pragma pack(pop, tp)
 		struct
 		{
-			char ___ulomidLE_12_OffsetPadding_forAlignmentOnly[8];
-			uint64_t ___ulomidLE_12_forAlignmentOnly;
+			char ___ulomidLE_9_OffsetPadding_forAlignmentOnly[8];
+			uint64_t ___ulomidLE_9_forAlignmentOnly;
 		};
 	};
 };
@@ -1991,15 +1991,15 @@ struct Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F
 struct Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_StaticFields
 {
 	// System.Decimal System.Decimal::Zero
-	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___Zero_3;
+	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___Zero_0;
 	// System.Decimal System.Decimal::One
-	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___One_4;
+	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___One_1;
 	// System.Decimal System.Decimal::MinusOne
-	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___MinusOne_5;
+	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___MinusOne_2;
 	// System.Decimal System.Decimal::MaxValue
-	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___MaxValue_6;
+	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___MaxValue_3;
 	// System.Decimal System.Decimal::MinValue
-	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___MinValue_7;
+	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___MinValue_4;
 };
 
 // System.DefaultBinder
@@ -4598,12 +4598,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SafeSerializationManager_CompleteDeseria
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* ExceptionDispatchInfo_get_BinaryStackTraceArray_mFF0B7DF49C6F188847C42B603B680FCA8FB86D1E_inline (ExceptionDispatchInfo_tD7AF19E75FEC22F4A8329FD1E9EDF96615CB2757* __this, const RuntimeMethod* method) ;
 // System.String System.String::Format(System.String,System.Object,System.Object,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C (String_t* ___format0, RuntimeObject* ___arg01, RuntimeObject* ___arg12, RuntimeObject* ___arg23, const RuntimeMethod* method) ;
-// System.Int32 System.GC::get_MaxGeneration()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GC_get_MaxGeneration_mC974FB6C41BC0F65458B4F5843029D58EBCD963A (const RuntimeMethod* method) ;
-// System.Void System.GC::InternalCollect(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GC_InternalCollect_m11D7538285DA7CFB7F22D7D8BB1574E23762C708 (int32_t ___generation0, const RuntimeMethod* method) ;
-// System.Int32 System.GC::GetMaxGeneration()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GC_GetMaxGeneration_mF00C30EF3348F0C1880F5A9A2408B94E55759555 (const RuntimeMethod* method) ;
 // System.Void System.GC::_SuppressFinalize(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GC__SuppressFinalize_mC461CEE1BF6349BFDF91A0CA0F9D513B19BAB8BA (RuntimeObject* ___o0, const RuntimeMethod* method) ;
 // System.Void System.GC::_ReRegisterForFinalize(System.Object)
@@ -21005,20 +20999,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Exception__cctor_mAA6142617DE48F3454EF90
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Int32 System.GC::GetMaxGeneration()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GC_GetMaxGeneration_mF00C30EF3348F0C1880F5A9A2408B94E55759555 (const RuntimeMethod* method) 
-{
-	typedef int32_t (*GC_GetMaxGeneration_mF00C30EF3348F0C1880F5A9A2408B94E55759555_ftn) ();
-	using namespace il2cpp::icalls;
-	return ((GC_GetMaxGeneration_mF00C30EF3348F0C1880F5A9A2408B94E55759555_ftn)mscorlib::System::GC::GetMaxGeneration) ();
-}
-// System.Void System.GC::InternalCollect(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GC_InternalCollect_m11D7538285DA7CFB7F22D7D8BB1574E23762C708 (int32_t ___generation0, const RuntimeMethod* method) 
-{
-	typedef void (*GC_InternalCollect_m11D7538285DA7CFB7F22D7D8BB1574E23762C708_ftn) (int32_t);
-	using namespace il2cpp::icalls;
-	((GC_InternalCollect_m11D7538285DA7CFB7F22D7D8BB1574E23762C708_ftn)mscorlib::System::GC::InternalCollect) (___generation0);
-}
 // System.Void System.GC::register_ephemeron_array(System.Runtime.CompilerServices.Ephemeron[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GC_register_ephemeron_array_m7798D3C75D2E2DC50CAA2422C2B36656D7793D18 (EphemeronU5BU5D_t4F80428A1142C3102C946127F8190063001742E8* ___array0, const RuntimeMethod* method) 
 {
@@ -21059,44 +21039,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GC_GetMemoryInfo_m76EC8CBA59E73780A035D8
 		return;
 	}
 }
-// System.Void System.GC::Collect()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GC_Collect_m43D435501E4B72E382DB08A0431DE01D550F76A7 (const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GC_t920F9CF6EBB7C787E5010A4352E1B587F356DC58_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		il2cpp_codegen_runtime_class_init_inline(GC_t920F9CF6EBB7C787E5010A4352E1B587F356DC58_il2cpp_TypeInfo_var);
-		int32_t L_0;
-		L_0 = GC_get_MaxGeneration_mC974FB6C41BC0F65458B4F5843029D58EBCD963A(NULL);
-		GC_InternalCollect_m11D7538285DA7CFB7F22D7D8BB1574E23762C708(L_0, NULL);
-		return;
-	}
-}
 // System.Void System.GC::KeepAlive(System.Object)
 IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void GC_KeepAlive_m53833ADCAF719294E5D1DA13B067E31472C762F9 (RuntimeObject* ___obj0, const RuntimeMethod* method) 
 {
 	{
 		return;
-	}
-}
-// System.Int32 System.GC::get_MaxGeneration()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GC_get_MaxGeneration_mC974FB6C41BC0F65458B4F5843029D58EBCD963A (const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GC_t920F9CF6EBB7C787E5010A4352E1B587F356DC58_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		il2cpp_codegen_runtime_class_init_inline(GC_t920F9CF6EBB7C787E5010A4352E1B587F356DC58_il2cpp_TypeInfo_var);
-		int32_t L_0;
-		L_0 = GC_GetMaxGeneration_mF00C30EF3348F0C1880F5A9A2408B94E55759555(NULL);
-		return L_0;
 	}
 }
 // System.Void System.GC::_SuppressFinalize(System.Object)
