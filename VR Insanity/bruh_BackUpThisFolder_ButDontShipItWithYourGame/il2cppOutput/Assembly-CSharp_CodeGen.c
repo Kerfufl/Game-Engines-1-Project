@@ -520,7 +520,15 @@ extern void ONSPVersion_Start_mFED1A19F111362158C03E7E0AD6A7EE73579FEE3 (void);
 extern void ONSPVersion_Update_m606155480DDA2DAFEE02D73B2D6314C636FA4806 (void);
 // 0x00000105 System.Void ONSPVersion::.ctor()
 extern void ONSPVersion__ctor_m8ED2A7ABAD08BFD94A03E048D885E69C875DDB13 (void);
-static Il2CppMethodPointer s_methodPointers[261] = 
+// 0x00000106 System.Void sidestep::Start()
+extern void sidestep_Start_m71778E61932EFFCF8C75CAFEEDD361087195BA37 (void);
+// 0x00000107 System.Void sidestep::Update()
+extern void sidestep_Update_m0BFE3192124F279D7ADD149515A3A64EDB1164C0 (void);
+// 0x00000108 System.Void sidestep::FixedUpdate()
+extern void sidestep_FixedUpdate_m4B484C7B07A0164436E33A6989DB18672E7456C4 (void);
+// 0x00000109 System.Void sidestep::.ctor()
+extern void sidestep__ctor_m9986CF470B2B89497B195556E3C1D92E1564A087 (void);
+static Il2CppMethodPointer s_methodPointers[265] = 
 {
 	MouseLook_Update_m18C0A114A78C19B888A9F74CA1FE5A837DF9E42A,
 	MouseLook_Start_m08FD16A47A96624540CD1B8EBA5FFAA1FD75E686,
@@ -783,8 +791,12 @@ static Il2CppMethodPointer s_methodPointers[261] =
 	ONSPVersion_Start_mFED1A19F111362158C03E7E0AD6A7EE73579FEE3,
 	ONSPVersion_Update_m606155480DDA2DAFEE02D73B2D6314C636FA4806,
 	ONSPVersion__ctor_m8ED2A7ABAD08BFD94A03E048D885E69C875DDB13,
+	sidestep_Start_m71778E61932EFFCF8C75CAFEEDD361087195BA37,
+	sidestep_Update_m0BFE3192124F279D7ADD149515A3A64EDB1164C0,
+	sidestep_FixedUpdate_m4B484C7B07A0164436E33A6989DB18672E7456C4,
+	sidestep__ctor_m9986CF470B2B89497B195556E3C1D92E1564A087,
 };
-static const int32_t s_InvokerIndices[261] = 
+static const int32_t s_InvokerIndices[265] = 
 {
 	4930,
 	4930,
@@ -1047,6 +1059,10 @@ static const int32_t s_InvokerIndices[261] =
 	4930,
 	4930,
 	4930,
+	4930,
+	4930,
+	4930,
+	4930,
 };
 static const Il2CppTokenIndexMethodTuple s_reversePInvokeIndices[1] = 
 {
@@ -1056,7 +1072,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	261,
+	265,
 	s_methodPointers,
 	0,
 	NULL,
