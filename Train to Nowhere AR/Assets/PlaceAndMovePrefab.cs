@@ -6,6 +6,7 @@ using UnityEngine.XR.ARSubsystems;
 public class PlaceAndMovePrefab : MonoBehaviour
 {
     public GameObject spawn_prefab;
+    public GameObject spawner_prefab;
     GameObject spawned_object;
     bool object_spawned;
     ARRaycastManager arrayman;
@@ -33,7 +34,8 @@ public class PlaceAndMovePrefab : MonoBehaviour
                 }
                 else
                 {
-                    spawned_object.transform.position=hitpose.position+(Vector3.up*.1f);
+                    Destroy(spawned_object);
+                    object_spawned=false;
                 }
 
             }

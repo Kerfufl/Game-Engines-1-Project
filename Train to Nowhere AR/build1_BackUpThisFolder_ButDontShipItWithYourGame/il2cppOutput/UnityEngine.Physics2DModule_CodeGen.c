@@ -108,11 +108,9 @@ extern void RaycastHit2D_get_point_mB35E988E9E04328EFE926228A18334326721A36B (vo
 extern void RaycastHit2D_get_normal_m75F1EBDE347BACEB5A6A6AA72543C740806AB5F2 (void);
 // 0x00000030 System.Single UnityEngine.RaycastHit2D::get_distance()
 extern void RaycastHit2D_get_distance_mD0FE1482E2768CF587AFB65488459697EAB64613 (void);
-// 0x00000031 System.Single UnityEngine.RaycastHit2D::get_fraction()
-extern void RaycastHit2D_get_fraction_m9BF416582F5C4D5FC8D93E5DA57B4CDC64E030BE (void);
-// 0x00000032 UnityEngine.Collider2D UnityEngine.RaycastHit2D::get_collider()
+// 0x00000031 UnityEngine.Collider2D UnityEngine.RaycastHit2D::get_collider()
 extern void RaycastHit2D_get_collider_mB56DFCD16B708852EEBDBB490BC8665DBF7487FD (void);
-static Il2CppMethodPointer s_methodPointers[50] = 
+static Il2CppMethodPointer s_methodPointers[49] = 
 {
 	PhysicsScene2D_ToString_mACA22EF575F7544176360B16D431F2BB1DEBB307,
 	PhysicsScene2D_GetHashCode_mD45B3437D088C66A35AE20066AD632D1D0858B1E,
@@ -162,7 +160,6 @@ static Il2CppMethodPointer s_methodPointers[50] =
 	RaycastHit2D_get_point_mB35E988E9E04328EFE926228A18334326721A36B,
 	RaycastHit2D_get_normal_m75F1EBDE347BACEB5A6A6AA72543C740806AB5F2,
 	RaycastHit2D_get_distance_mD0FE1482E2768CF587AFB65488459697EAB64613,
-	RaycastHit2D_get_fraction_m9BF416582F5C4D5FC8D93E5DA57B4CDC64E030BE,
 	RaycastHit2D_get_collider_mB56DFCD16B708852EEBDBB490BC8665DBF7487FD,
 };
 extern void PhysicsScene2D_ToString_mACA22EF575F7544176360B16D431F2BB1DEBB307_AdjustorThunk (void);
@@ -181,9 +178,8 @@ extern void ContactFilter2D_SetDepth_mE614DDDDAEA489D150E61D2DF8104F9292236F18_A
 extern void RaycastHit2D_get_point_mB35E988E9E04328EFE926228A18334326721A36B_AdjustorThunk (void);
 extern void RaycastHit2D_get_normal_m75F1EBDE347BACEB5A6A6AA72543C740806AB5F2_AdjustorThunk (void);
 extern void RaycastHit2D_get_distance_mD0FE1482E2768CF587AFB65488459697EAB64613_AdjustorThunk (void);
-extern void RaycastHit2D_get_fraction_m9BF416582F5C4D5FC8D93E5DA57B4CDC64E030BE_AdjustorThunk (void);
 extern void RaycastHit2D_get_collider_mB56DFCD16B708852EEBDBB490BC8665DBF7487FD_AdjustorThunk (void);
-static Il2CppTokenAdjustorThunkPair s_adjustorThunks[18] = 
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[17] = 
 {
 	{ 0x06000001, PhysicsScene2D_ToString_mACA22EF575F7544176360B16D431F2BB1DEBB307_AdjustorThunk },
 	{ 0x06000002, PhysicsScene2D_GetHashCode_mD45B3437D088C66A35AE20066AD632D1D0858B1E_AdjustorThunk },
@@ -201,69 +197,67 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[18] =
 	{ 0x0600002E, RaycastHit2D_get_point_mB35E988E9E04328EFE926228A18334326721A36B_AdjustorThunk },
 	{ 0x0600002F, RaycastHit2D_get_normal_m75F1EBDE347BACEB5A6A6AA72543C740806AB5F2_AdjustorThunk },
 	{ 0x06000030, RaycastHit2D_get_distance_mD0FE1482E2768CF587AFB65488459697EAB64613_AdjustorThunk },
-	{ 0x06000031, RaycastHit2D_get_fraction_m9BF416582F5C4D5FC8D93E5DA57B4CDC64E030BE_AdjustorThunk },
-	{ 0x06000032, RaycastHit2D_get_collider_mB56DFCD16B708852EEBDBB490BC8665DBF7487FD_AdjustorThunk },
+	{ 0x06000031, RaycastHit2D_get_collider_mB56DFCD16B708852EEBDBB490BC8665DBF7487FD_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[50] = 
+static const int32_t s_InvokerIndices[49] = 
 {
-	7235,
-	7196,
-	4198,
-	4203,
-	1101,
-	1100,
-	8009,
-	479,
-	7703,
-	479,
-	7703,
-	1543,
-	8010,
-	1012,
-	7704,
-	7737,
-	7686,
-	7686,
-	7738,
-	7687,
-	11401,
-	11367,
-	10113,
-	9136,
-	8617,
-	8011,
-	7726,
-	8530,
-	7972,
-	7972,
-	9135,
-	10970,
-	10068,
-	9118,
-	8006,
-	9953,
-	9024,
-	8528,
-	11439,
-	7978,
-	7348,
-	5841,
-	3313,
-	8938,
-	11178,
-	7338,
-	7338,
-	7283,
-	7283,
-	7235,
+	5649,
+	5617,
+	3223,
+	3227,
+	739,
+	738,
+	6262,
+	325,
+	6005,
+	325,
+	6005,
+	1048,
+	6263,
+	703,
+	6006,
+	6033,
+	5994,
+	5994,
+	6034,
+	5995,
+	8943,
+	8910,
+	7935,
+	7119,
+	6705,
+	6264,
+	6022,
+	6639,
+	6229,
+	6229,
+	7118,
+	8608,
+	7901,
+	7107,
+	6260,
+	7811,
+	7032,
+	6638,
+	8978,
+	6235,
+	5746,
+	4580,
+	2499,
+	6963,
+	8776,
+	5736,
+	5736,
+	5690,
+	5649,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_Physics2DModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_Physics2DModule_CodeGenModule = 
 {
 	"UnityEngine.Physics2DModule.dll",
-	50,
+	49,
 	s_methodPointers,
-	18,
+	17,
 	s_adjustorThunks,
 	s_InvokerIndices,
 	0,
