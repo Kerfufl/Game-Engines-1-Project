@@ -1,0 +1,148 @@
+# Blender MTL File: 'Scifi train.blend'
+# Material Count: 14
+
+newmtl cart_energy
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd D:\\Blender\\Commercial textures\\SpaceStationGlass.png
+
+newmtl cart_energy_outline
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\Blender\\Commercial textures\\Gray Pattern.png
+
+newmtl cart_glass
+Ns 440.999985
+Ka 0.900000 0.900000 0.900000
+Kd 0.157435 0.157435 0.157435
+Ks 0.000000 0.000000 0.000000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 1
+
+newmtl cart_hover
+Ns 225.000000
+Ka 0.800000 0.800000 0.800000
+Kd 0.010026 0.092679 0.167949
+Ks 0.000000 0.000000 0.000000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 1
+
+newmtl cart_hull
+Ns 0.000000
+Ka 0.500000 0.500000 0.500000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd D:\\Blender\\Commercial textures\\SpaceStationHull.png
+
+newmtl cart_line
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.147314 0.006281 0.006936
+Ks 0.500000 0.500000 0.500000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl cart_top
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000515 0.000515 0.000515
+Ks 0.200000 0.200000 0.200000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl train_energy
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd D:\\Blender\\Commercial textures\\SpaceStationGlass.png
+
+newmtl train_energy_outline
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\Blender\\Commercial textures\\Gray Pattern.png
+
+newmtl train_glass
+Ns 440.999985
+Ka 0.900000 0.900000 0.900000
+Kd 0.157435 0.157435 0.157435
+Ks 0.000000 0.000000 0.000000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 1
+
+newmtl train_hover
+Ns 225.000000
+Ka 0.800000 0.800000 0.800000
+Kd 0.010026 0.092679 0.167949
+Ks 0.000000 0.000000 0.000000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 1
+
+newmtl train_hull
+Ns 0.000000
+Ka 0.500000 0.500000 0.500000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd D:\\Blender\\Commercial textures\\SpaceStationHull.png
+
+newmtl train_line
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.147314 0.006281 0.006936
+Ks 0.500000 0.500000 0.500000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl train_top
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000515 0.000515 0.000515
+Ks 0.200000 0.200000 0.200000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 2

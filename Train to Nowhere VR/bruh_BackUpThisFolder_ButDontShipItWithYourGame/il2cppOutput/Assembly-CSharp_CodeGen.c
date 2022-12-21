@@ -528,7 +528,17 @@ extern void sidestep_Update_m0BFE3192124F279D7ADD149515A3A64EDB1164C0 (void);
 extern void sidestep_FixedUpdate_m4B484C7B07A0164436E33A6989DB18672E7456C4 (void);
 // 0x00000109 System.Void sidestep::.ctor()
 extern void sidestep__ctor_m9986CF470B2B89497B195556E3C1D92E1564A087 (void);
-static Il2CppMethodPointer s_methodPointers[265] = 
+// 0x0000010A System.Void waypoint_setup::SetUpWaypoints()
+extern void waypoint_setup_SetUpWaypoints_mBAF762114E1E551F27DB86E35B9860A7AE7406CB (void);
+// 0x0000010B System.Void waypoint_setup::OnDrawGizmos()
+extern void waypoint_setup_OnDrawGizmos_m9A6AA64DA3188EEE221F356335F470C8C0A92FA9 (void);
+// 0x0000010C System.Void waypoint_setup::Start()
+extern void waypoint_setup_Start_m0B02B02A16D0DD6C35FA70DB20855810DF44A63A (void);
+// 0x0000010D System.Void waypoint_setup::Update()
+extern void waypoint_setup_Update_mD8AD12628CEF0593FF196E8D0CF9BF1DC39E4030 (void);
+// 0x0000010E System.Void waypoint_setup::.ctor()
+extern void waypoint_setup__ctor_m3407944B570EC74A7482D3ACB018197FA66E911F (void);
+static Il2CppMethodPointer s_methodPointers[270] = 
 {
 	MouseLook_Update_m18C0A114A78C19B888A9F74CA1FE5A837DF9E42A,
 	MouseLook_Start_m08FD16A47A96624540CD1B8EBA5FFAA1FD75E686,
@@ -795,8 +805,13 @@ static Il2CppMethodPointer s_methodPointers[265] =
 	sidestep_Update_m0BFE3192124F279D7ADD149515A3A64EDB1164C0,
 	sidestep_FixedUpdate_m4B484C7B07A0164436E33A6989DB18672E7456C4,
 	sidestep__ctor_m9986CF470B2B89497B195556E3C1D92E1564A087,
+	waypoint_setup_SetUpWaypoints_mBAF762114E1E551F27DB86E35B9860A7AE7406CB,
+	waypoint_setup_OnDrawGizmos_m9A6AA64DA3188EEE221F356335F470C8C0A92FA9,
+	waypoint_setup_Start_m0B02B02A16D0DD6C35FA70DB20855810DF44A63A,
+	waypoint_setup_Update_mD8AD12628CEF0593FF196E8D0CF9BF1DC39E4030,
+	waypoint_setup__ctor_m3407944B570EC74A7482D3ACB018197FA66E911F,
 };
-static const int32_t s_InvokerIndices[265] = 
+static const int32_t s_InvokerIndices[270] = 
 {
 	4930,
 	4930,
@@ -1063,6 +1078,11 @@ static const int32_t s_InvokerIndices[265] =
 	4930,
 	4930,
 	4930,
+	4930,
+	4930,
+	4930,
+	4930,
+	4930,
 };
 static const Il2CppTokenIndexMethodTuple s_reversePInvokeIndices[1] = 
 {
@@ -1072,7 +1092,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	265,
+	270,
 	s_methodPointers,
 	0,
 	NULL,
