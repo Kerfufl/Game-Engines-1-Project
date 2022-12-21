@@ -28,22 +28,23 @@ public class sidestep : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Vector3 curtar = br.waypoints[l];
-        // Vector3 totar = curtar - transform.position;
+        Vector3 curtar = br.waypoints[l];
+        Vector3 totar = curtar - transform.position;
+        totar.y =0;
 
-        // gameObject.transform.position= Vector3.MoveTowards(transform.position, curtar, speed* Time.deltaTime);
+        gameObject.transform.position= Vector3.MoveTowards(transform.position, curtar, speed* Time.deltaTime) + (transform.up * Mathf.Sin(Time.time * 2)*.001f);
         
-        // //gameObject.transform.position = startPos + (Vector3.up * Mathf.Sin(Time.time * 2)*.2f);
-        // if (Vector3.Distance(transform.position,  curtar) < .5f)
-        // {
-        //     l=(l +1) % br.waypoints.Count;
+        //gameObject.transform.position = startPos + (Vector3.up * Mathf.Sin(Time.time * 2)*.2f);
+        if (Vector3.Distance(transform.position,  curtar) < .5f)
+        {
+            l=(l +1) % br.waypoints.Count;
             
-        // }
+        }
         
-        // Quaternion q = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(totar), 1.5f * Time.deltaTime);
-        // transform.rotation = q;
+        Quaternion q = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(totar), 1.5f * Time.deltaTime);
+        transform.rotation = q;
 
-        transform.position += transform.forward * Time.deltaTime;
+        //transform.position += transform.forward * Time.deltaTime;
     }
 
     void FixedUpdate()

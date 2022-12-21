@@ -280,88 +280,6 @@ MonoBehaviour:
   edgeRenderingEnabled_: 1
   edgeColor_: {r: 0.2953008, g: 0.39756992, b: 0.7924528, a: 1}
   colorMapType: 0
---- !u!1 &238570760
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 238570762}
-  - component: {fileID: 238570761}
-  - component: {fileID: 238570763}
-  - component: {fileID: 238570764}
-  m_Layer: 0
-  m_Name: TrainCont
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &238570761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238570760}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06dbc10d37330ae4297918eaa7c560d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pos1: {fileID: 0}
-  pos2: {fileID: 0}
-  wayp: {fileID: 1879682766}
-  l: 0
-  speed: 2
-  b: []
---- !u!4 &238570762
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238570760}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.24, y: 0.703, z: 8.38}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &238570763
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238570760}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!64 &238570764
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238570760}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: 22b8c1d81e8d7be4cb0297c1581f551e, type: 3}
 --- !u!1001 &337848559
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -832,6 +750,7 @@ GameObject:
   - component: {fileID: 4970975117695141268}
   - component: {fileID: 8492040300794306817}
   - component: {fileID: 8492040300794306818}
+  - component: {fileID: 8492040300794306819}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -958,7 +877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos1: {fileID: 0}
   pos2: {fileID: 0}
-  wayp: {fileID: 0}
+  wayp: {fileID: 1879682766}
   l: 0
   speed: 2
   b: []
@@ -1002,3 +921,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: 22b8c1d81e8d7be4cb0297c1581f551e, type: 3}
+--- !u!54 &8492040300794306819
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2574028786246437745}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
