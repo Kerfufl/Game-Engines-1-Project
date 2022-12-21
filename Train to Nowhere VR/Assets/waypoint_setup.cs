@@ -5,6 +5,7 @@ using UnityEngine;
 public class waypoint_setup : MonoBehaviour
 {
     public List<Vector3> waypoints;
+    public GameObject train;
     public int count = 5;
     public float radius = 5;
 
@@ -44,6 +45,8 @@ public class waypoint_setup : MonoBehaviour
     void Start()
     {
         SetUpWaypoints();
+        Instantiate(train, waypoints[0], Quaternion.LookRotation(waypoints[1]-waypoints[0], gameObject.transform.up));
+        
     }
 
     int current = 0;
