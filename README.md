@@ -23,6 +23,29 @@ The AR project builds to android devices using software 8.0 onwards for compatib
 
 # How it works
 An empty game object generates a list of waypoints, instantiating the train model which has a movement script to follow these waypoints with a reasonable turning speed, a low magnitude sin function being added to the moveToward() function to simulate a classic hover effect.
+```csharp
+void Update()
+    {
+        //Keeps track of next waypoint
+        Vector3 curtar = br.waypoints[l];
+        Vector3 totar = curtar - transform.position;
+        //Prevents awkward rotation when sin wave is added
+        totar.y =0;
+        
+        //Moves towards waypoint while hovering up and down
+        gameObject.transform.position= Vector3.MoveTowards(transform.position, curtar, speed* Time.deltaTime) + (transform.up * Mathf.Sin(Time.time * 2)*.001f);
+        
+        //gameObject.transform.position = startPos + (Vector3.up * Mathf.Sin(Time.time * 2)*.2f);
+        if (Vector3.Distance(transform.position,  curtar) < .5f)
+        {
+            l=(l +1) % br.waypoints.Count;
+            
+        }
+        //Rotates the train towards the next waypoint smooth enough
+        Quaternion q = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(totar), 1.5f * Time.deltaTime);
+        transform.rotation = q;
+    }
+```
 
 Passthrough effect is achieved through oculus integration packages, with a passthrough layer on the OVR camerarig. It was initially configured to paint useable surfaces blue, but was forgotten and was left on when rendering a blue train model, making it harder to see the train in passthrough.
 
