@@ -14,8 +14,12 @@ Inspired by train sets, both for childrens toys and hobbyist simulator sets, whi
 # How it turned out
 Due to personal reasons, project ended up not incorporating all the intended features. The project is now a trian travelling a set path around the player, though the passthrough works, despite making it harder to see the train in game. The train still has the holographic shader while also simulating a hover movement and a free hover sound effect, though volume was adjusted to headphones and thus ended up being dronwed out in a crowded lab room.
 
+Before gaining access to a headset, an augmented reality app for android was developed to better understand passthrough and AR development. This only progressed to placing a cube in the real world on compatible horizontal surfaces, with location anchors allowing for persistent instantiation of said objects.
+
 # Instructions for use
 Deployed to an oculus quest(1 or 2) headset, the project is ismply seeing a holographic train hover around the player, playing sound effects as it circles. The user was supposed to be able to interact with the train and choose whhere to place it in the real world, but the feature was cut due to self imposed time constraints.
+
+The AR project builds to android devices using software 8.0 onwards for compatibility purposes. 
 
 # How it works
 An empty game object generates a list of waypoints, instantiating the train model which has a movement script to follow these waypoints with a reasonable turning speed, a low magnitude sin function being added to the moveToward() function to simulate a classic hover effect.
@@ -26,81 +30,36 @@ Passthrough effect is achieved through oculus integration packages, with a passt
 
 | Class/asset | Source |
 |-----------|-----------|
-| MyClass.cs | Self written |
-| MyClass1.cs | Modified from [reference]() |
-| MyClass2.cs | From [reference]() |
+| holo_train.cs | Self written |
+| waypoint_setup.cs | Self written |
+| scifi_train(model) | From [Sketchfab](https://skfb.ly/6RCz6) |
+| Hover_train(sound effect) | Edited from [Pixabay](https://pixabay.com/sound-effects/hovercar-76193/) |
 
 # References
 
+1. Scifi Train from Sketchfab: [https://skfb.ly/6RCz6](https://skfb.ly/6RCz6)
+2. Hover_train from Pixabay: [https://pixabay.com/sound-effects/hovercar-76193/](https://pixabay.com/sound-effects/hovercar-76193/)
 # What I am most proud of in the assignment
 
+The model I sourced from Sketchfab had its vectors setup incorrectly, likely due to it being a conversion from blender to object file extension to work in unity. It took much tinkering without access to a 3d modeller, but I was able to attach this model to an empty game object to 'fix' the irections so that the forward vector was along the logical front of the object. Along with this, getting a small sin function to simulate a hover effect for the model was harder than expected, going particularly off the rails when using move toward. This was rectified by preventing rotations on the y axis to prevent the model from rotating awkwardly while moving up and down.
+
+For the AR project, I managed to figure out AR anchors to lock objects in place, allowing for persistence even if the user were to leave the room and return. This would have strenghtened the vibe of a futuristic trinket/ toy on a table or cabinet.
 # Proposal submitted earlier can go here:
 
-## This is how to markdown text:
+## Game-Engines-1-Project
+C19382426 Game Engines 1 2022-2023 repo for final assignment, AR scifi trainset
 
-This is *emphasis*
+## Proposal
+Scifi trainset, probably aesthetically based on 'world of tomorrow' era trains. Should allow you to place tracks in a given space with the quest pass through/ phone AR and place train with a personalised number of carriages to follow said tracks, or set train down first to make their own path. Some sort of *Train To No Where*
 
-This is a bulleted list
+## Implementation
+Train and carriages will be either found as existing models or generated through ai. In game, train can be spawned, with options of adding carriages as children which will match its movements. Scripts for following tracks or making their own path, possibly ways to react ot human intervention such as flying away when being picked up off the tracks.
 
-- Item
-- Item
+Tracks can be standard tracks that are placed or a special *holo* version when the train is making them itself. Probably has a script for checking direction to help the train to rotate with the track correctly. Tracks can be placed before train is set into motion, no need to complete tracks to have fun *off the rails* moments.
 
-This is a numbered list
+If I have time, I might include a diagetic controller for the train to control the speed and maybe elevation of the train to let it fly off the rails, so to speak.
 
-1. Item
-1. Item
+# Video Demonstration
+[Short video demonstration](https://www.youtube.com/watch?v=J2kHSSFA4NU), no access to a headset so editor only.
 
-This is a [hyperlink](http://bryanduggan.org)
-
-# Headings
-## Headings
-#### Headings
-##### Headings
-
-This is code:
-
-```Java
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
-
-So is this without specifying the language:
-
-```
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
-
-This is an image using a relative URL:
-
-![An image](images/p8.png)
-
-This is an image using an absolute URL:
-
-![A different image](https://bryanduggandotorg.files.wordpress.com/2019/02/infinite-forms-00045.png?w=595&h=&zoom=2)
-
-This is a youtube video:
-
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
-
-This is a table:
-
-| Heading 1 | Heading 2 |
-|-----------|-----------|
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
 
