@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class sidestep : MonoBehaviour
+public class holo_train : MonoBehaviour
 {
     public GameObject pos1;
     public GameObject pos2;
@@ -43,8 +43,6 @@ public class sidestep : MonoBehaviour
         
         Quaternion q = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(totar), 1.5f * Time.deltaTime);
         transform.rotation = q;
-
-        //transform.position += transform.forward * Time.deltaTime;
     }
 
     void FixedUpdate()
